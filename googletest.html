@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        practice practice
+    </title>
+    <meta charset="utf-8">
+    <link href="googletestcss.css" rel="stylesheet">
+
+    <script src=index.js></script>
+    <!--반복되는 코드가 많고 전체 페이지에 할때 또 다른연결 하는거, 모든파일에적용-->
+    <script type="text/javascript">
+     
+    function funname1() {
+        alert('메세지1');alert('메세지2');
+   
+    }
+    function fun1() {
+
+        //변수 ,기억장소 기억장소에 이름을 부여해서, var 변수선언
+
+      var b= 20;
+
+      alert (b/30);
+
+    
+      //alert(x+y);
+      //alert(x-y);
+      //alert(x*y);
+      //alert(x/y);
+
+
+
+    } 
+    
+     function fun2_1(a,b) {
+      //alert(a+b);
+      //alert(a-b);
+      //alert(a*b);
+      //alert(a/b);
+        return;
+
+     }
+
+    
+    </script>
+
+    
+    <!--
+    20200102
+     
+     자바에서 자주사용하는 명령어 모음
+     1. funtion funname1(){
+        명령들 입력
+     }
+     이름 마음대로 가능하나 앞에 function은 그대로 씀 
+     묶음 사용할때 명령모음의 이름을 불러줘야함
+
+     // 함수는 갔다가 되돌아 온다, 순서대로 기능하게 할 수 있음.
+
+
+
+    -->
+
+
+</head>
+
+<body>
+
+    <input type="button" value="연산결과" onclick="fun1()">
+    <input type="button" value="묶음" onclick="funname1()">
+
+    <h1>이것은 2020 01 02 js 수업연습</h1>
+
+    <input type="button" value="검은배경 노란글자" onclick="
+        alert('검은배경 노란글자로 하시겠습니까?');
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='yellow';
+        ">
+
+
+    <input class="itme" type="button" value="원상태로" onclick="
+         alert('원상태로 갈려고?');
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         ">
+
+         <input type="text" value="하루에 쓸 수 있는 돈" onclick="
+          document.getElementsByClassName('item') 
+          
+          ">
+
+          
+
+
+
+</body>
+</html>

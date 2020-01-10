@@ -1,0 +1,39 @@
+h1 {
+    color:red;
+}
+
+.p1{
+    color:yellow;
+}
+
+.p2{
+    color:yellow;
+
+}
+.p3{
+    color:purple;
+    text-align:center;
+}
+
+.p4{
+    color:orange;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+table, th, td {
+    border: 2px solid yellow;
+    color:red;
+    
+    
+    
+}
+.table1 {
+    text-align: center;
+}
+
+hr{
+    display:block;
+}

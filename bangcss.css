@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Helvetica, sans-serif; margin:0
+  }
+
+  img {vertical-align: middle;}
+
+
+  .mySlides {
+    display: none;
+
+  }
+  /*슬라이드쇼 연습*/
+
+  .ss-ct {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top:-22px;
+    padding:16px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0,0);
+  }
+
+  
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width:15px;
+  margin:0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+  p{
+    font-size: large;
+    text-align: center;
+
+
+  }
+
+
+/* Style the header */
+header {
+
+    background-color:white;
+    padding: 50px;
+    height: 300px;
+    text-align: center;
+    font-size: 35px;
+    color:black;
+  }
+
+  hr {
+    display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 50;
+  margin-right:50; 
+  border-style: outset;
+  border-width: 5px;
+
+  }
+
+  table, th, td {
+    border: 1px solid black;
+
+  }
+ 
+  .char_tb1 {
+    float: left;
+
+
+  
+  }
+
+
+
+ 
+ a {
+     text-decoration:none;
+     color:black;
+
+
+ }
+/*
+ div {
+     float:left;
+     border:2px solid #000;
+     width:100px;
+     height:100px;
+     text-align: center;
+     line-height: 100px;
+     font-weight: bold;
+
+
+ }
+ */
+
+ #row {
+     float:left;
+ }
+  
+
+    
+
+
+
+
+
+  /* Create two columns/boxes that floats next to each other */
+  
+  .headnav1 {
+    float:top;
+    width: auto;
+    height: 200px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+
+  nav {
+    float: left;
+    width: 20%;
+    height: 1500px; /* only for demonstration, should be removed */
+    background:white;
+    padding: 0px;
+    border-right: 1px solid black;
+    
+   
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:white;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .date {
+    text-align: right;
+    font-weight: bold;
+  }
+  article {
+    text-align: center;
+    float: center;
+    padding: 20px;
+    width: 80%;
+    background-color:white;
+    height: 1500px; 
+  }
+   .bg_arti {
+    text-align: center;
+    float: center;
+    padding: 20px;
+    width: 100%;
+    background-color:white;
+    height: 1800px; 
+
+   }
+   /* art 나눈게 그 nav 가 혹시들어가면 %나눠야해서*/
+   .art2{
+    text-align: center;
+    float: center;
+    
+    width: 100%;
+    background-color:white;
+    height: 1500px; 
+
+   }
+   .js-main-arti {
+    text-align: center;
+    float: center;
+    padding: 20px;
+    width: 100%;
+    background-color:white;
+    height: 500px; 
+
+   }
+
+    
+
+  
+
+  .logo{
+    width: 100px;
+    display: inline-flex;
+        }
+    
+    .logo img{
+        
+    float: left;
+    margin: auto 5px;
+    width: 150px;
+    height: 38px;
+    }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+}
