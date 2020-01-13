@@ -1,12 +1,22 @@
+
+/* index main slide 관련
+ 1. 
+ 2. 
+ 3. 
+ 4. 
+ 5. 
+*/
+
 * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: Verdana, Helvetica, sans-serif; margin:0
+    font-family: Verdana, sans-serif; margin:0
   }
 
-  img {vertical-align: middle;}
+  img {vertical-align: middle;
+  }
 
 
   .mySlides {
@@ -16,15 +26,17 @@
   /*슬라이드쇼 연습*/
 
   .ss-ct {
-    max-width: 700px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
 
   }
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
     top:50%;
+    width: auto;
     margin-top:-22px;
     padding:16px;
     color:white;
@@ -34,7 +46,7 @@
     border-radius:0 3px 3px 0;
     user-select: none;
   }
-
+/* 포지션 넥스트버튼 오른쪽의*/
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -94,6 +106,10 @@
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
 
   p{
@@ -126,10 +142,17 @@ header {
 
   }
 
-  table, th, td {
+  table {
     border: 1px solid black;
+    margin:20px;
 
   }
+  th, td {
+    border: 1px solid black;
+    
+
+  }
+
  
   .char_tb1 {
     float: left;
@@ -184,8 +207,8 @@ header {
 
   nav {
     float: left;
-    width: 20%;
-    height: 1500px; /* only for demonstration, should be removed */
+    width: 30%;
+    height: 2000px; /* only for demonstration, should be removed */
     background:white;
     padding: 0px;
     border-right: 1px solid black;
@@ -227,11 +250,49 @@ header {
   article {
     text-align: center;
     float: center;
-    padding: 20px;
-    width: 80%;
+    padding: 0px;
+    width: 70%;
     background-color:white;
     height: 1500px; 
   }
+  .container {
+    position: relative; 
+    width:50%;
+  }
+  .image {
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom:100%;
+    left: 0;
+    right:0;
+    background-color: white;
+    overflow: hidden;
+    width:100%;
+    height:0;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    bottom:0;
+    height: 100%;
+  }
+
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,50%);
+    text-align: center;
+
+  }
+
    .bg_arti {
     text-align: center;
     float: center;
